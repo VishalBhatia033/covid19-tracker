@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>varients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/covid_varients.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+  </style>
+</head>
+
+<body>
+  <!-- new  -->
+
+  <div class="container-fluid stick" id="stick" onscroll="chgclor()">
+    <div class="container">
+      <div class="row justify-content-between align-items-center pt-md-4 pb-md-4" id="mg">
+        <div class="col-3 d-xl-block d-none">
+          <p class="container fs-3 pt-2 pb-2 px-3 py-0 m-0 text-start" style="font-family: Bebas Neue, cursive"
+            id="proj">
+            COVID-19 Projections
+          </p>
+        </div>
+        <div class="col-xl-8 text-end">
+          <nav class="container-fluid p-0" id="navigation-home">
+            <ul id="ulists" class="ulist" style="text-align: end">
+              <li onclick="didit()" id="list6" class="pt-3 pb-3">
+                <i class="fa fa-sharp fa-regular fa-bars"></i>
+              </li>
+            </ul>
+            <ul id="ulistt" class="ulist p-0 m-0">
+              <li onclick="location.href='index.html';" id="list1" class="px-4 py-4 pt-3 pb-3 tool">
+                <a id="flink" href="index.html"> HOME</a>
+              </li>
+              <li onclick="location.href='indian_page.html';" id="list2" class="px-4 py-4 pt-3 pb-3 proj">
+                <a id="slink" href="indian_page.html"> INDIA-COVID-LIVE</a>
+              </li>
+              <li onclick="location.href='about_covid.html';" id="list3" class="px-4 py-4 pt-3 pb-3">
+                <a id="tlink" href="about_covid.html">ABOUT-COVID</a>
+              </li>
+              <li onclick="location.href='about_covid.html';" id="list4" class="px-4 py-4 pt-3 pb-3">
+                <a id="folink" href="about_covid.html"> VARIANTS</a>
+              </li>
+
+              <li onclick="location.href='entertainment.html';" id="list5" class="px-4 py-4 pt-3 pb-3">
+                <a id="filink" href="entertainment.html">MOVIES</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- banner -------------------------------- -->
+  <div class="container-fluid m-0 p-0 banner ">
+    <div class="row m-0 p-0">
+      <div class="col m-0 p-0 mt-2">
+        <div class="container">
+          <p style="font-family: Bebas Neue; word-spacing: 3px;" class="fs-1 text-light">COVID-19(CORONAVIRUS) GLOBAL
+            PANDAMIC</p>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+
+  <!-- main content -->
+
+  <main class="m-0 p-0">
+    <div class="container-fluid p-0 m-0  bg-light">
+      <div class="row justify-content-around m-2 mt-4 con_padding">
+        <div class="col-md-8  ">
+          <div class="row ">
+            <div class="col-md-8 p-5 covid_defination" style="background: #00747a; color: white; height: 100%">
+              <span class="bg-dark p-2 every_heading">
+                <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+                <span class="h6 text-light"> WHAT YOU NEED TO KNOW </span>
+              </span>
+              <h3 class="mt-4">COVID-19</h3>
+              <ul class="textsizemain">
+                <li>
+                  COVID-19 is the disease caused by SARS-CoV-2, the
+                  coronavirus that emerged in December 2019.
+                </li>
+                <li>
+                  COVID-19 can be severe, and has caused millions of deaths
+                  around the world as well as lasting health problems in
+                  some who have survived the illness.
+                </li>
+                <li>
+                  The coronavirus can be spread from person to person. It is
+                  diagnosed with a test.
+                </li>
+                <li>
+                  The best way to protect yourself is to get vaccinated and
+                  boosted when you are eligible, follow testing guidelines,
+                  wear a mask, wash your hands and practice physical
+                  distancing.
+                </li>
+              </ul>
+            </div>
+            <div class="col-1 d-md-block d-none" style="background: #067a81; color: white"></div>
+            <div class="col-1 d-md-block d-none" style="background: #0b868d; color: white"></div>
+            <div class="col-1 d-md-block d-none" style="background: #14949b; color: white"></div>
+            <div class="col-1 d-md-block d-none" style="background: #1c9ca3; color: white"></div>
+
+            <div class="col-12 p-5 covid_defination" style="background: #00747a; color: white; height: 100%">
+              <span class="bg-dark p-2">
+                <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+                <span class="h6 text-light every_heading">What Is a COVID-19 Variant?</span>
+              </span>
+              <h3 class="mt-4 ">VARIANT</h3>
+              <p class="textsizemain">
+                Viruses are always changing, and that can cause a new
+                variant, or strain, of a virus to form. A variant usually
+                doesn't affect how the virus works. But sometimes they make
+                it act in different ways. Scientists around the world are
+                tracking changes in the virus that causes
+                <span> COVID-19. </span>
+                Their research is helping experts understand whether certain
+                <span>COVID-19 </span>
+                variants spread faster than others, how they might affect
+                your health, and how effective different vaccines might be
+                against them.
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class="col-3 d-md-block d-none">
+          <div class="row border " style="box-shadow: 0 15px 30px 1px grey">
+            <div class="col-12">
+              <img class="img-fluid rounded mt-3" src="images/omicronvarient.jpg" alt="" />
+              <h5 class="mt-2">MUTATION</h5>
+              <p >
+                A mutation occurs when there is a change to the genetic
+                material ––either the DNA or RNA ––from the original normal
+                or ‘wild type’ version of the genome of a particular
+                organism or biological entity.
+                <span class="d-lg-block d-none">The mutation could be entirely novel, or it could have
+                  occurred before.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="row border mb-5 mt-5" style="box-shadow: 0 15px 30px 1px grey">
+            <div class="col-12">
+              <img class="img-fluid rounded mt-3" src="images/covidvaccine.jpg" alt="" />
+              <h5 class="mt-2">Are current vaccines good enough?</h5>
+              <p >
+                Although current vaccines may not be a perfect fit for
+                Omicron, they are still the best line of defence against
+                Covid.
+              </p>
+              <p class="d-lg-block d-none ">
+                They have cut the risk of severe illness against the other
+                major Covid variants, including Delta, Alpha, Beta and
+                Gamma. Doctors say it is vital people get the recommended
+                number of doses to gain maximum protection against existing
+                and emerging variants. everyone should take 3 doses of covid vaccines
+                to get protect form virus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <!-- 2nd container  -->
+
+  <main class="m-0 p-0">
+    <div class="container-fluid p-0 m-0" >
+        <div class="row m-4 con_padding">
+
+          <div class="col-12 covid_defination p-5 mb-3" style="background: #00747a; color: white; height: 100%">
+            <span class="bg-dark p-2">
+              <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+              <span class="h6 text-light every_heading">How Many Coronaviruses Are There? </span>
+            </span>
+            <p class="textsizemain">
+              Coronaviruses didn't just pop up recently.
+              They're a large family of viruses that have been around for a
+              long time.
+
+              Many of them can cause a variety of illnesses, from a mild cough
+              to severe respiratory illnesses. The new (or “novel”)
+              coronavirus that causes COVID-19 is one of several known to
+              infect humans. It's probably been around for some time in
+              animals. Sometimes, a virus in animals crosses over into people.
+              That's what scientists think happened here. So this virus isn't
+              new to the world, but it is new to humans. When scientists found
+              out that it was making people sick in 2019, they named it as a
+              novel coronavirus. Experts call these strains
+              SARS-CoV-2.
+            </p>
+          </div>
+
+
+
+
+          <div class="col-12 covid_defination p-5 mb-3" style="background: #00747a; color: white; height: 100%">
+            <span class="bg-dark p-2">
+              <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+              <span class="h6 text-light every_heading">How Do Variants Happen?</span>
+            </span>
+            <p class="textsizemain">
+              Coronaviruses have all their genetic material in something
+              called
+              <span>RNA (ribonucleic acid). </span>
+              RNA has some similarities to DNA, but they aren't the same. When
+              viruses infect you, they attach to your cells, get inside them,
+              and make copies of their RNA, which helps them spread. If
+              there's a copying mistake, the RNA gets changed.
+              <span>Scientists call those changes mutations.</span>
+              These changes happen randomly and by accident. It's a normal
+              part of what happens to viruses as they multiply and spread.
+              Because the changes are random, they may make little to no
+              difference in a person's health. Other times, they may cause
+              disease. For example, one reason you need a flu shot every year
+              is because influenza viruses change from year to year. This
+              year's flu virus probably isn't the exact same one that
+              circulated last year.
+            </p>
+          </div>
+
+
+          <div class="col-12 covid_defination p-5 mb-3" style="background: #00747a; color: white; height: 100%">
+            <span class="bg-dark p-2">
+              <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+              <span class="h6 text-light every_heading">What Is the Omicron Variant?</span>
+            </span>
+            <p class="textsizemain">
+              The new variant<span> (B.1.1.529)</span>
+              was first detected in specimens collected on November 11, 2021 in
+              Botswana. Experts in South Africa first reported the Omicron
+              variant to the World Health Organization (WHO) on Nov. 24, 2021.
+              They discovered the variant after COVID-19 infections suddenly
+              began to go up. The WHO grouped Omicron as a “Variant of Concern.”
+              This category means the variant might have a higher
+              transmissibility, cause more intense disease, and may be less
+              likely to respond to vaccines or treatments. But researchers need
+              more information to confirm these factors. Early evidence suggests
+              that the Omicron variant causes a higher risk of reinfection
+              compared to other variants.
+            </p>
+            <p class="textsizemain d-lg-block d-none">
+              Current PCR tests for COVID-19 can effectively find Omicron cases.
+              Experts found that one specific PCR test doesn't identify one of
+              the three target genes (called the S gene dropout) in people
+              infected with Omicron. Because of this, these tests can
+              specifically mark positive Omicron cases and, because of that, can
+              detect this variant faster than with previous surges.
+              <span>According to research, breakthrough infections are possible
+                with the Omicron variant even if you’re fully vaccinated.
+              </span>
+              However, COVID-19 vaccines and boosters are still effective at
+              preventing severe illness, hospitalizations, and death. The
+              Omicron variant is now the dominant strain in the U.S.
+            </p>
+            <p class="textsizemain d-lg-block d-none"><b>Omicron “stealth” variant (BA.2):</b> Scientists call it
+              <span> Omicron BA.2 </span>as opposed to the original Omicron
+              variant, BA.1. At first, scientists thought BA.2 wasn’t as
+              contagious as BA.1 and would soon fade away. That didn’t happen,
+              and starting in January 2022, BA.2 appeared to be at least as
+              easy to transmit as BA.1. As of the end of February 2022, BA.2
+              showed signs of spreading more easily than other variants,
+              though it didn’t seem to cause more serious symptoms. The World
+              Health organization has said that BA.2 is a “variant of
+              concern.”
+            </p>
+          </div>
+
+
+          <div class="col-12 covid_defination p-5 mb-3" style="background: #00747a; color: white; height: 100%">
+            <span class="bg-dark p-2">
+              <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+              <span class="h6 text-light every_heading">Other Coronavirus Mutations</span>
+            </span>
+            <p class="textsizemain">
+              <b>Alpha (B.1.1.7) . </b> In late 2020, experts noted gene
+              mutations in COVID-19 cases seen in people in southeastern
+              England. This variant has since been reported in other countries,
+              <span>
+                including the U.S. Scientists estimate that these mutations
+                could make the virus up to 70% more transmissible,
+              </span>
+              meaning it could spread more easily. Some research has linked this
+              variant to a higher risk of death, but the evidence isn't strong.
+              The mutation on the Alpha variant is on the spike protein, which
+              helps the virus infect its host. This is what COVID-19 vaccines
+              target. These vaccines make antibodies against many parts of the
+              spike protein, so it's unlikely that a single new mutation in the
+              Alpha variant will make the vaccine less effective.
+            </p>
+            <img class="img-fluid rounded mt-3 mb-3" src="images/alpha.webp" alt="" />
+            <p class="textsizemain">
+              <b>Beta (B.1.351).</b> Other variants of the virus have been found
+              in other countries, including
+              <span> South Africa and Nigeria.</span>
+              The Beta variant appears to spread more easily than the original
+              virus but doesn't seem to cause worse illness.
+            </p>
+            <p class="textsizemain">
+              <b> Gamma (P.1).</b> In January 2021, experts spotted this
+              COVID-19 variant in people from Brazil who'd traveled to Japan. By
+              the end of that month, it was showing up in the U.S. The Gamma
+              variant appears to be more contagious than earlier strains of the
+              virus. And it may be able to infect people who've already had
+              COVID-19. A report from Brazil confirms that a 29-year-old woman
+              came down with this variant after an earlier coronavirus infection
+              a few months before.
+            </p>
+
+            <p class="textsizemain">
+              <b>Delta (B.1.617.2). </b> This variant was spotted in
+              <span>India </span> in <span> December 2020 </span>. It caused a
+              huge surge in cases in mid-April 2021. This highly contagious
+              variant is now found in 178 countries including the U.S., the
+              U.K., Australia, and all of Europe. It's the dominant strain in
+              the U.S. and the U.K.
+            </p>
+          </div>
+
+          <div class="col-12 covid_defination p-5 mb-3" style="background: #00747a; color: white; height: 100%">
+            <span class="bg-dark p-2">
+              <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+              <span class="h6 text-light every_heading" > A study of the COVID-19 vaccine's effectiveness against this
+                variant found that:</span>
+            </span>
+            <ul class="textsizemain">
+              <li>
+                Two doses of the Pfizer-BioNTech vaccine were
+                <span>88% </span>effective 2 weeks after the second dose.
+              </li>
+              <li>
+                Two doses of the AstraZeneca vaccine available in the U.K.
+                were
+                <span> 60% </span>
+                effective.
+              </li>
+              <li>
+                Both vaccines are only
+                <span>33% </span> effective 3 weeks after the first dose.
+              </li>
+            </ul>
+            <p class="textsizemain">
+              <b>Mu (B.1.621).</b> Experts first spotted this COVID-19 variant
+              (pronounced m'yoo) in Colombia in January 2021. Since then,
+              countries in South America and Europe have reported outbreaks of
+              Mu. In the U.S., the CDC says Mu reached a peak in June 2021, when
+              it made up less than<span>5% </span>
+              of variants going around the country. As of early September, it
+              had been steadily declining.
+            </p>
+            <p class="textsizemain">
+              <b>R.1.</b> Scientists first detected R.1 in a number of
+              countries, including Japan. There was an outbreak at a Kentucky
+              nursing home in March 2021, when an unvaccinated health care
+              worker passed it to about 45 other staff and residents. The WHO
+              labeled it a “variant under monitoring” in April 2021, meaning
+              some of its characteristics may pose a future risk to humans. As
+              of October 2021, the CDC hadn't labeled R.1 as a variant of
+              concern or interest. Epsilon, Theta, and Zeta were at one point
+              listed as variants of interest and were downgraded by the WHO.
+              They are still being monitored.
+            </p>
+            <p class="textsizemain">
+              The virus that causes COVID-19 will probably keep changing.
+              Experts may find new variants. It's impossible to predict how
+              those virus changes might affect what happens. But change is just
+              what viruses do.
+            </p>
+          </div>
+
+
+        </div>
+  </main>
+
+  <!-- about data section  -->
+
+<div class="container-fluid m-0 p-0 d-lg-block d-none">
+  <div class="row  m-4 con_padding">
+    <div class="col-12 covid_defination p-5 mb-3" style="background: rgb(176, 161, 79); color: black; height: 100%">
+      <span class="bg-dark p-2">
+        <i class="fa fa-exclamation-circle h5 text-warning" aria-hidden="true"></i>
+        <span class="h6 text-light every_heading"> About this data</span>
+      </span>
+      <p>
+        The data used on this page comes from a variety of sources. this
+        information is taken from several websites on internet .this page is
+        made with the objective of providing information about
+        covid-19(CORONAVIRUS) VARIENTS...
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- footer  -->
+
+  <div class="mt-4 pt-3 pb-3 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company" id="footerlinks">
+          <h4>COVID-TRACKER</h4>
+          <p class="pr-5 text-white-50 quote">
+            Get live data for better decisions in an uncertain time
+          </p>
+          <p class="inline">
+            <a href="https://instagram.com/_vishal_033?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+          </p>
+          <p class="inline">
+            <a href="#"><i class="fa fa-telegram"></i></a>
+          </p>
+          <p class="inline">
+            <a href="https://www.facebook.com/profile.php?id=100014347066487"><i
+                class="fa fa-facebook-square mr-1"></i></a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links d-lg-block d-none" id="footerlinks">
+          <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+          <ul class="m-0 p-0">
+            <li>- <a href="indian_page.html">INDIAN covid LIVE</a></li>
+            <li>- <a href="about_covid.html">ABOUT COVID-19</a></li>
+            <li>- <a href="covid_varients.html">VARIENTS</a></li>
+            <li>- <a href="feedback.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location" id="footerlinks">
+          <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+          <p class="mb-0">HAMIRPUR,HP</p>
+          <p class="mb-0"><i class="fa fa-spinner fa-spin"></i></p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>(222) 111-0000</p>
+          <p><i class="fa fa-envelope-o mr-3"></i>feedback0033@gmail.com</p>
+        </div>
+      </div>
+      <div class="row mt-2" id="footerlinks">
+        <div class="col copyright">
+          <p class="">
+            <small class="text-white-50">© 2019. All Rights Reserved.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/global.js"></script>
+</body>
+
+</html>

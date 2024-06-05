@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+
+  #link{
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.nav{
+    margin-left: auto;
+}
+.banner {
+  background-image: url(../images/banner2.png);
+} 
+
+
+/* navigations links  */
+#navigationlinks{
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+  /* color: rgb(38, 80, 171); */
+  font-weight: 400;
+}
+#navigationlinks:hover{
+  color: rgb(97, 226, 238);
+}
+
+
+
+/* floting covid banner  */
+
+main{
+    margin-top: 100px;
+}
+.textsizemain{
+    font-size: 19px;
+    line-height: 36px;
+    font-weight: 100;
+}
+
+  /* movie button  */
+  #moviebutton{
+  transition: 0.4s;
+      
+  }
+
+  /* borders for boxes */
+  /* .border{
+      /* border: 2px solid black; */
+      /* border-radius: 7px; */
+  /* } */ */
+  .bborder{
+    border-radius: 15px 50px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  margin-right: 10px;
+}
+
+main{
+  margin: 20px;
+}
+
+
+
+
+
+#heading{
+  background-color: #0057b8;
+  color: white;
+border-radius: 15px 50px;
+
+} 
+.headingmargin{
+  margin-left: 15px;
+}
+
+#aboutvacination{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* col 3 designing  */
+#fsbanner{
+  /* background-color: gray; */
+  transition: 0.4s;
+}
+
+
+
+.textsizemain {
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 400;;
+}
+
+/* media quary  */
+@media screen and (max-width: 500px ) {
+  .covid_defination{
+    padding: 20px !important;
+    
+  }
+  .textsizemain{
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 500;
+}
+#list6{
+  color: white !important;
+}
+#ulistt li a{
+  color: white !important;
+}
+.con_padding{
+  margin: 12px !important;
+}
+  #footerlinks{
+    text-align: center;
+  }
+  #heading{
+    background-color: white;
+    color: black;
+  }
+  .headingmargin{
+    margin-left: 0;
+}
+
+.banner{
+  height: 30vh;
+}
+  main{
+    margin: 5px;
+  }
+  .textsizemain{
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 500;
+}
+#aboutvacination{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#redbanner{
+font-size: 12px;
+}
+/* #inbanner{
+  position: relative;
+  top: -27px;
+} */
+/* #heading{
+  background-color: white;
+  color: black;
+} */
+
+/* #header{
+  height: 30vh;
+} */
+
+#movesection{
+  display: none;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 770px ) {
+  #ah1{
+display: none;
+  }
+ 
+}
+  
+  

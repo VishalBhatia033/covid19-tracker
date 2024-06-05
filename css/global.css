@@ -1,0 +1,181 @@
+#header {
+  height: 100%;
+  width: 100%;
+  background: #0057b8;
+}
+
+/* #63599e */
+.stick {
+  position: sticky;
+  top: 0;
+}
+
+
+.banner {
+  height: 60vh;
+}
+.banner {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+.hulist {
+  list-style: none;
+}
+
+.hulist a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* navigation bar css  */
+#navigation-home {
+  height: 100%;
+  transition: 0.8s;
+}
+
+
+.ulist {
+  list-style: none;
+}
+
+.ulist li {
+  display: inline-block;
+  color: black;
+  border-left: 5px solid transparent;
+  cursor: pointer;
+}
+
+.ulist li a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.ulist li:hover {
+  transition: 0.4s;
+}
+
+/* footer  ---------------- */
+.footer {
+  background: #0057b8;
+  color: white;
+}
+
+.links ul {
+
+  list-style-type: none;
+
+}
+
+.links li a {
+  color: white;
+  transition: color .3s;
+
+}
+
+.links li a:hover {
+  text-decoration: none;
+  color: #7fa9db;
+}
+
+
+
+.about-company i {
+  font-size: 25px;
+
+}
+
+.about-company a {
+  color: white;
+  transition: color .3s;
+
+}
+
+.about-company a:hover {
+  color: #4180CB
+}
+
+.location i {
+  font-size: 18px;
+}
+
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  margin: 0;
+}
+
+.inline {
+  display: inline-block;
+  /* margin-left: 10px; */
+  margin-right: 15px;
+}
+@media screen and (max-height: 1600px ) and (max-width: 600px){
+  .banner{
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #stick{
+    background-color: #0057b8 !important;
+  }
+  #list6{
+    color: white !important;
+  }
+  #ulistt li a{
+    color: white !important;
+  }
+}
+@media screen and (max-width: 500px) {
+
+#quote{
+  padding: 0 !important;
+}
+.banner_text_margin div a{
+  display: none;
+}
+.fontsize{
+  font-size: 14px !important;
+}
+  #stick{
+    background-color: #0057b8 !important;
+  }
+  .mg {
+    padding: 0;
+    margin: 0;
+  }
+
+  #proj{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+  }
+  .ulist{
+    margin: 0;padding: 0;
+  }
+
+  .quote {
+    font-size: 10px;
+  }
+
+  .location {
+    font-size: 10px;
+  }
+
+  .bannertext {
+    font-size: 24px;
+  }
+
+  #header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {}

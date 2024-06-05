@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.zero{
+    margin: 0;
+    padding: 0;
+}
+html {
+    user-select: none;
+}
+
+/* navbar  */
+#link {
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#link:hover,
+#link:active {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+
+.banner {
+    background-image: url(../images/banner2.jpg);
+  } 
+  
+  #fsbanner{
+    /* background-color: gray; */
+    transition: 0.4s;
+  }
+  #fsbanner:hover{
+    box-shadow: 10px 10px 10px 10px gray;
+    transform: scale(1.1);
+  }
+
+/* main content  */
+
+main {
+    margin-top: 100px;
+}
+
+.textsizemain {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;;
+}
+
+
+
+
+/* navigations links  */
+#navigationlinks{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    /* color: rgb(38, 80, 171); */
+    font-weight: 400;
+}
+#navigationlinks:hover{
+    color: rgb(13, 158, 171);
+}
+/* 
+
+/* borders for heading  */
+ .border{
+     /* border: 2px solid black; */ 
+     border-radius: 1px;
+} 
+
+
+#heading{
+    background-color: #0057b8;
+    color: white;
+  border-radius: 15px 50px;
+
+  } 
+
+  .headingmargin{
+      margin-left: 15px;
+  }
+
+@media screen and (max-width: 500px ) {
+  
+    .covid_defination{
+        padding: 20px !important;
+        
+      }
+      .con_padding{
+        margin: 12px !important;
+      }
+
+    #heading{
+        background-color: white;
+        color: black;
+      }
+    #footerlinks{
+      text-align: center;
+    }
+    .textsizemain{
+        font-size: 14px;
+        line-height: 36px;
+        font-weight: 500;
+    }
+    .headingmargin{
+        margin-left: 0;
+    }
+    .banner{
+      height: 30vh;
+    }
+    #list6{
+      color: white !important;
+    }
+    #ulistt li a{
+      color: white !important;
+    }
+    .every_heading{
+      padding-right: 15px !important;
+      padding-left: 5px !important;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+    }
+
+    /* #inbanner{
+        position: relative;
+        top: -5px;
+      } */
+   
+
+
+    /* #header{
+        height: 30vh;
+    } */
+  
+    
+  }
+  

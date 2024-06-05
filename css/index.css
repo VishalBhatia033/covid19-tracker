@@ -1,0 +1,452 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.under:hover .un{
+  text-decoration: underline;
+}
+.underline:hover{
+  text-decoration: underline;
+}
+
+.newscon::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+ } 
+
+.newscon::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+.newscon::-webkit-scrollbar-thumb {
+  background-color: #0057b8;
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
+}
+
+.banner {
+  background-image: url(../images/b1.webp);
+} 
+
+
+
+
+
+#banner1{
+  border-top: 5px solid #09cac0;
+  height: 70vh;
+  background-image: url(../images/banner1.jpg);
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+#banner2{
+
+  border-bottom: 5px solid #09cac0;
+  box-shadow: 10px 10px 7px #aaaaaa;
+  height: 70vh;
+  background-image: url(../images/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+#NewConfirmed,#NewDeaths{
+transition: 0.3s;
+}
+#banner2nd:hover #NewDeaths{
+  font-size: 60px;
+}
+#banner2nd:hover #NewConfirmed{
+  font-size: 60px;
+}
+
+#note{
+  position:fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+.br{
+  border-radius: 10px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.max {
+  height: 100vh;
+  background-color: aqua;
+}
+
+.fsbanner{
+  /* background-color: gray; */
+  box-shadow: 1px 1px 1px 1px rgb(172, 172, 172);
+  transition: 0.3s;
+}
+
+
+.trans div div p i{
+  transition: 0.3s;
+}
+
+.trans:hover div div p i{
+  transform: scale(1.6);
+}
+#fix {
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+#link {
+  color: white;
+  font-weight: bold;
+  transition: 0.4s;
+
+}
+#link:hover,
+#link:active {
+  color: yellow;
+  /* background-coor: rgba(172, 172, 201, 0.5); */
+  border-bottom: 3px solid    yellow;
+  
+}
+
+
+
+/*------------------- main data------------------- */
+
+main {
+  background-color: white;
+}
+
+#totalcases {
+  color: #aaa;
+  font-weight: 700;
+  user-select: none;
+}
+#innerlinks {
+  color: #0c6504;
+  font-size: large;
+}
+#innerlinks:hover {
+  color: #0c7b08;
+}
+#totaldeaths {
+  color: rgb(228, 76, 76);
+  font-weight: 700;
+  user-select: none;
+}
+#indianew{
+  color: rgb(228, 76, 76);
+  font-weight: 700;
+  user-select: none;
+}
+#totalrecovered {
+  color: #8aca2b;
+  font-weight: 700;
+  user-select: none;
+}
+#NewConfirmed{
+  font-weight: 700;
+  user-select: none;
+  color:rgb(249, 157, 28) ;
+}
+#NewDeaths{
+  font-weight: 700;
+  user-select: none;
+  color: rgb(228, 76, 76);
+}
+
+/* #first{
+  box-shadow: 5px 10px rgb(249, 157, 28);
+  background: #e4e7f4;
+  border-radius: 6px;
+} */
+
+#banner2nd{
+  height: 100vh;
+}
+.bannercontainer{
+  border-top: 12px solid  #1671d9;
+  border-radius: 25px;
+
+}
+
+
+#banner2ndd{
+  height: 100vh;
+  background-image: url(../images/hardhit.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+
+}
+/* #second{
+  background: #e4e7f4;
+  box-shadow: 5px 10px rgba(216, 32, 8, 0.66);
+  border-radius: 6px;
+
+} */
+
+.bully {
+  height: 100vh;
+  background-color: azure;
+}
+
+/* ----------------contries table api------------------? */
+.table-responsive{
+  height: 80vh;
+}
+
+table thead {
+  font-weight: 400;
+  padding: 2px;
+  font-size: 14px;
+  user-select: none;
+}
+table thead tr:hover {
+  background-color: #f0ecec;
+}
+/* table thead tr{
+  transition: 0.3s;
+
+} */
+table thead tr .fw-bolder {
+  font-size: 14px;
+  color: white;
+  padding: 8px;
+  background-color: #0057b8;
+  position: sticky;
+  top: 0;
+  border: 1px solid #787878;
+}
+table thead tr td{
+  border: 1px solid #c4c3c3;
+  
+  }
+
+
+.mostsuff{
+  padding: 8px;
+  height: 60px;
+  text-align: center;
+  border-bottom: 2px solid #333333;
+  color: #ffffff;
+  background: #0baba3;
+  font-size: 110.00000000000001%;
+  font-weight: 600;
+
+}
+.suffbody tr td{
+  font-size: 110.00000000000001%;
+  text-align: center;
+  padding: 4px;
+  height: 50px;
+  font-weight: 500;
+}
+
+.suffbody .strip {
+background-color: #f6f5f5;
+}
+
+#srb{
+  background-color: #f6f5f5;
+  /* background-image: url(../images/map.jpg); */
+  box-shadow: 7px 7px 7px #dfdfdf;
+
+  border-radius: 5px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  /* border: 1px solid rgb(244, 244, 134) ;
+  box-shadow: 5px 5px 5px 5px rgb(233, 233, 231) ; */
+}
+
+/* news section ------------------------ */
+#defination{
+  border-radius: 10px;
+}
+
+.newsdisplayer ul {
+  list-style: none;
+}
+#newscontainer{
+  padding: 0;
+}
+.newsdisplayer{
+  margin: 0;
+  border: 1px solid #b9b7b7;
+  border-radius: 10px;
+  padding: 10px;
+}
+.newsdisplayer ul li {
+  margin: 8px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  transition: 0.4s;
+
+}
+.newsdisplayer ul li:hover{
+  background-color: #cecccc;
+  font-size: 18px;
+}
+.mythsborder h4{
+  font-weight: 400;
+
+}
+.mythsborder{
+  cursor: pointer;
+  color: #1c7fa6;
+  position: static;
+  border-top: 3px solid rgb(72, 4, 72);
+  border-bottom: 3px solid rgb(232, 222, 232);
+  border-left: 3px solid rgb(232, 222, 232);
+  border-right: 3px solid rgb(232, 222, 232);
+  top: 0;
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+
+
+}
+.mythsborder:hover{
+  border-top: 3px solid rgb(72, 4, 72);
+  border-bottom: 3px solid rgb(72, 4, 72);
+  border-left: 3px solid rgb(72, 4, 72);
+  border-right: 3px solid rgb(72, 4, 72);
+  position: relative;
+  top: -14px;
+}
+
+.flex{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+/* media querys  */
+@media screen and (min-width: 1800px ) {
+  .fstbanner{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 500px ) {
+
+  #totalcases,#totaldeaths,#totalrecovered{
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  main{
+    margin: 0;
+  }
+  #banner2nd{
+    height: 60vh;
+  }
+  .margin_zero{
+    margin: 0 !important;
+  }
+  .padding_zero{
+    padding: 0 !important;
+  }
+  .margin-top{
+    margin-bottom: 20px;
+  }
+  .banner{
+    height: 30vh;
+  }
+  .banner_text_margin{
+    margin-top: 15px !important;
+  }
+  #list6{
+    color: white !important;
+  }
+  #ulistt li a{
+    color: white !important;
+  }
+  .margin{
+    margin: 10px;
+  }
+  #note{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #header{
+    position: sticky;
+    top: 0;
+  }
+  .totaltext{
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .main_box{
+    margin: 12px !important;
+  }
+  .totalno{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  #search{
+    margin-bottom: 10px;
+  }
+  #searchlable{
+    
+    font-size: 10px;
+  }
+  
+  .bannertext{
+    font-size: 24px;
+  }
+
+
+  
+  #footerlinks{
+    text-align: center;
+  }
+
+  table thead {
+
+    font-size: 10px;
+
+  }
+  table thead tr .fw-bolder {
+    font-size: 10px;
+   
+    
+  }
+  .padding_zero{
+    padding: 0;
+  }
+  .margin_zero{
+    margin: 0;
+  }
+  /* #header{
+    height: 50vh;
+  } */
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,211 @@
+#body {
+    background-color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+
+      .product-details {
+        text-align: left;
+        overflow: hidden;
+        padding: 30px;
+        height: 100%;
+        float: left;
+        width: 50%;
+      }
+
+      .hint-star {
+        display: inline-block;
+        color: gold;
+        width: 100%;
+      }
+
+      .product-image {
+        transition: all 0.3s ease-out;
+        display: inline-block;
+        overflow: hidden;
+        /* float: right; */
+        width: 45%;
+        display: inline-block;
+      }
+
+      /* .product-image:hover img {
+        transition: all 0.3s ease-out;
+      }
+      .product-image:hover img {
+        transform: scale(1.2, 1.2);
+      } */
+
+
+
+
+.rowglow:hover {
+    background-color: rgb(246, 244, 244);
+    /* border-radius: 15px; */
+}
+
+.rowglow {
+    transition: 0.4s;
+
+}
+.banner {
+
+    background-image: url(../images/moviesbanner.webp);
+  
+  } 
+
+.footer {
+    background: rgb(2,0,36);
+    color: white;
+}
+
+/* navbar  */
+#link {
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#link:hover,
+#link:active {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.border {
+    border-radius: 10px;
+}
+
+.zero {
+    margin: 0;
+    padding: 0;
+}
+
+#discription {
+    font-weight: 600;
+}
+
+
+/* heading border  */
+.bborder {
+    /* background-color: rgb(227, 226, 226); */
+    /* border: 1px solid black; */
+    /* color: white; */
+    /* background-color: rgb(234, 233, 233); */
+    border-radius: 30px ;
+}
+
+/* navigationlinks  */
+#navigationlinks a {
+    text-decoration: none;
+    color: rgb(54, 136, 190);
+    font-weight: 700;
+}
+
+.imgup{
+    transition: 0.4s;
+}
+
+.imgup:hover{
+    box-shadow: 6px 6px 6px 6px gray;
+    transform: scale(1.1);
+  }
+
+/* navigations links  */
+#navigationlinks{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    /* color: rgb(38, 80, 171); */
+    font-weight: 400;
+  }
+  #navigationlinks:hover{
+    color: rgb(13, 158, 171);
+  }
+  #wstext{
+      font-size: 10px;
+  }
+/* media quary  */
+
+@media screen and (max-width: 1000px) {
+    #moviedis {
+        text-align: center;
+    }
+    .bborder {
+        margin-top: 20px;
+        background-color: white;
+        /* border-radius: 30px ; */
+    }
+  
+}
+
+@media screen and (max-width: 750px) {
+    
+    
+}
+@media screen and (max-width: 500px) {
+  .web_img{
+    padding-top: 20px !important;
+  }
+  
+    #wstext{
+        font-size: 17px;
+    }
+    #footerlinks{
+        text-align: center;
+      }
+      #stick{
+        background-color: black !important;
+      }
+      #list6 i{
+        color: white !important;
+
+      }
+      #ulistt li a{
+        color: white !important;
+      }
+      .rating{
+        margin-left: 13px;
+      }
+      .rating_row{
+        padding-top: 0 !important;
+      }
+      .web_name{
+        font-size:20px !important;
+      }
+      .description_font_size{
+        font-size: 12px;
+      }
+      .rating_heading{
+        font-size: 16px !important;
+      }
+      .movie_name{
+        font-size: 20px !important;
+      }
+      .banner{
+        height: 30vh;
+      }
+}
+
+@media screen and (min-width: 500px) {
+   
+    #wstext{
+        font-size: 23px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #footerlinks {
+        text-align: center;
+    }
+    /* #inbanner{
+        position: relative;
+        top: -45px;
+      } */
+   
+}

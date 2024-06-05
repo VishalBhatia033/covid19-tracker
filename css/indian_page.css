@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.product-details {
+  /* position: relative; */
+  text-align: left;
+  overflow: hidden;
+  padding: 30px;
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+
+
+
+.product-image {
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  /* position: relative; */
+  overflow: hidden;
+  /* float: right; */
+  width: 45%;
+  display: inline-block;
+}
+
+/* .product-image:hover img {
+  transition: all 0.3s ease-out;
+}
+.product-image:hover img {
+  transform: scale(1.2, 1.2);
+} */
+
+
+/* banner  */
+
+
+#link{
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#link:hover,
+#link:active {
+  color: red;
+  /* background-color: rgba(172, 172, 201, 0.5); */
+  border-bottom: 3px solid red;
+}
+.nav{
+    margin-left: auto;
+}
+
+ /* main indian records =--------------------- */
+main {
+    background-color: white;
+  }
+  
+  #totalcases {
+    color: #aaa;
+    font-weight: 700;
+    user-select: none;
+  }
+  #innerlinks {
+    color: #8aca2b;
+  }
+  #innerlinks:hover {
+    color: #b9e07d;
+  }
+  #totaldeaths {
+    color: rgb(228, 76, 76);
+    font-weight: 700;
+    user-select: none;
+  }
+  #totalrecovered {
+    color: #8aca2b;
+    font-weight: 700;
+    user-select: none;
+  }
+
+/* indian state wise table  */
+
+table thead {
+  font-weight: 400;
+  padding: 2px;
+  font-size: 15px;
+  user-select: none;
+}
+table thead tr:hover {
+  background-color: #f0ecec;
+}
+.banner {
+
+  background-image: url(../images/b1.webp);
+
+} 
+  /* table thead tr{
+    transition: 0.3s;
+  } */
+  table thead tr .fw-bolder {
+    font-size: 15px;
+    color: white;
+    padding: 8px;
+    height: 60px;
+    background-color: #0057b8;
+    padding-bottom: 18px;
+    position: sticky;
+    top: 0;
+  }
+  .table-responsive{
+    height: 80vh;
+    width: 100%;
+  }
+  
+
+  
+  /* navigations links  */
+  .navigationlinks{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    }
+    .navigationlinks:hover{
+      color: #1e84bb
+    }
+    /* new nav  */
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  margin-right: 10px;
+}
+
+#fsbanner{
+  /* background-color: gray; */
+  box-shadow: 1px 1px 1px 1px rgb(172, 172, 172);
+  transition: 0.3s;
+}
+#fsbanner:hover{
+  box-shadow: 5px 5px 5px 5px gray;
+  transform: scale(1.1);
+}
+
+/* media quary  */
+
+@media screen and (max-width: 500px ) {
+
+  #totalcases,#totaldeaths,#totalrecovered{
+    margin-top: 40px;
+    font-size: 40px;
+
+  }
+  main{
+    margin: 0;
+  }
+  .totalno{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  .main_box{
+    margin: 12px !important;
+  }
+  .information{
+    font-size: 12px !important;
+  }
+  .fontsiz{
+    font-size: 12px !important;
+  }
+  .banner{
+    height: 30vh;
+  }
+  .banner_text_margin{
+    margin-top: 15px !important;
+  }
+  #list6{
+    color: white !important;
+  }
+  #ulistt li a{
+    color: white !important;
+  }
+  .margin{
+    margin: 10px;
+  }
+  .product-details{
+    padding: 10px;
+  }
+  #sbannertext{
+    font-size: 15px;
+    margin-top: 9px;
+  }
+  #searchlable{
+    font-size: 13px;
+  }
+
+  #footerlinks{
+    text-align: center;
+  }
+
+  #navigationlinkss{
+    display: none;
+  }
+  
+  table thead {
+
+    font-size: 10px;
+
+  }
+  table thead tr .fw-bolder {
+    font-size: 10px;
+   
+    
+  }
+  .totaltext{
+    font-size: 24px;
+  }
+  .totalno{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  .bannertext{
+    font-size: 24px;
+  }
+  #search{
+    margin-bottom: 10px;
+  }
+  #searchlable{
+    font-size: 10px;
+  }
+  
+  .bannertext{
+    font-size: 24px;
+  }
+  /* #header{
+    height: 55vh;
+  } */
+
+
+  
+}
+

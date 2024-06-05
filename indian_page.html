@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indain data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/indian_page.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+    </style>
+  </head>
+
+  <body onload="getindian(),getstate()">
+
+    <!-- new nav  -->
+
+    <div class="container-fluid stick" id="stick" onscroll="chgclor()" >
+      <div class="container">
+        <div class="row justify-content-between align-items-center pt-md-4 pb-md-4" id="mg">
+          <div class="col-3 d-xl-block d-none ">
+            <p class="container fs-3 pt-2 pb-2 px-2 py-0 m-0 text-start " style="font-family: Bebas Neue, cursive;" id="proj">COVID-19 Projections</p>
+          </div>
+          <div class="col-xl-8 text-end">
+            <nav class="container-fluid  p-0" id="navigation-home">
+              <ul id="ulists" class="ulist  " style="text-align: end;">
+                <li onclick="didit()" id="list6" class=" pt-3 pb-3  "><i class="fa fa-sharp fa-regular fa-bars"></i> </li>
+              </ul>
+              <ul id="ulistt" class="ulist p-0 m-0">
+                <li onclick="location.href='index.html';" id="list1" class=" px-4  py-4 pt-3 pb-3 tool"><a id="flink" 
+                    href="index.html"> HOME</a> </li>
+                <li onclick="location.href='indian_page.html';" id="list2" class="px-4 py-4 pt-3 pb-3 proj"><a id="slink"
+                    href="indian_page.html"> INDIA-COVID-LIVE</a>
+                </li>
+                <li onclick="location.href='about_covid.html';" id="list3" class="px-4 py-4 pt-3 pb-3 "><a  id="tlink"
+                    href="about_covid.html">ABOUT-COVID</a></li>
+                <li onclick="location.href='about_covid.html';" id="list4" class="px-4 py-4 pt-3 pb-3 "><a id="folink"
+                    href="about_covid.html"> VARIANTS</a></li>
+                    
+                <li onclick="location.href='entertainment.html';" id="list5" class="px-4 py-4 pt-3 pb-3 "><a id="filink" 
+                    href="entertainment.html">MOVIES</a>
+                </li>
+              </ul>
+          </nav>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- font-family: 'Courier New', monospace;" -->
+
+<!-- banner -------------------------------- -->
+<div class="container-fluid m-0 p-0 banner ">
+  <div class="row m-0 p-0">
+    <div class="col m-0 p-0 mt-5  banner_text_margin">
+      <div class="container">
+        <p class="text-light display-6" ><span style="font-family: Bebas Neue; word-spacing: 2px;">INDIAN LIVE COVID DATA</span> </p>
+        <p class="text-light d-lg-block d-none" >get the latest information of every region</p>
+        <a class="btn btn-primary " href="#search">FIND YOUR STATE</a>
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+    <!-- ------------------------small banner ----------------------- -->
+    <!-- <div class="container mb-4 mt-5 " id="sbanner">
+      <div class="row justify-content-center " >
+        <div class="col-lg-6 col-md-10 col-sm-12">
+          <p class="h4 text-center p-0 m-1" id="sbannertext">Latest Updated Records</p>
+        </div>
+      </div>
+    </div> -->
+
+ 
+
+    <!-- .-----------------main indian records ------------ -->
+
+
+
+    <main class="m-5 p-lg-5 main_box">
+      <div class="row align-items-center ">
+        <div class="col-lg-4  margin">
+          <div class="col-12">
+            <h1 class="text-center totaltext" style="color: #555">
+              Total Cases:
+            </h1>
+          </div>
+          <div class="col-12">
+            <p class="display-4 text-center totalno m-0" id="totalcases">00000000</p>
+          </div>
+        </div>
+  
+  
+        <div class="col-lg-4 margin">
+          <div class="col-12">
+            <h1 class="text-center totaltext" style="color: #555">Deaths:</h1>
+          </div>
+          <div class="col-12">
+            <p class="display-4 text-center totalno m-0" id="totaldeaths">
+              00000000
+            </p>
+          </div>
+        </div>
+  
+  
+        <div class="col-lg-4 margin">
+          <div class="col-12">
+            <h1 class="text-center totaltext" style="color: #555">Recovered:</h1>
+          </div>
+          <div class="col-12">
+            <p class="display-4 text-center totalno m-0" id="totalrecovered">000000
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+        <!-- ------------------search box-------------------- -->
+
+        <div class="container-fluid">
+
+          <div class="container">
+            <div class="row justify-content-center align-items-center m-0">
+         
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 ">
+                <input class="form-control" type="search" id="search" placeholder="search............."
+                  onkeyup="searchfun()" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- state wise record table  -->
+    <div class="table-responsive">
+      <table
+        class="table table-bordered container text-left ml-5 mt-5"
+        id="tablebody"
+      >
+        <thead>
+          <tr>
+            <td class="fw-bolder">#</td>
+            <td class="fw-bolder">State</td>
+            <td class="fw-bolder">Total Cases</td>
+            <td class="fw-bolder">Total Deaths</td>
+            <td class="fw-bolder">Total Recovered</td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    
+<!-- suffered states  -->
+
+
+<div class="container mt-5 ">
+  <div class="row justify-content-around">
+
+    <!-- himachal  -->
+
+    <div class="col-md-5 col-10 col-lg-5 col-xl-5 col-xxl-5 mt-5 mb-5" style="box-shadow: 0 15px 30px 1px grey">
+      <div class="product-details">
+        <h1 style="font-family: Bebas Neue, cursive; font-size: 30px; text-transform: uppercase;">
+         himachal pradesh
+        </h1>
+        
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+            <P class="m-0">TOTAL CASES:</P>
+            <p><span class="text-warning fw-bold fs-5"  id="totalcaseshp"></span></p>
+          </p>
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+          <p class="m-0">TOTAL DEATHS:</p>
+          <P><span  class="text-danger fw-bold fs-5" id="totaldeathshp"></span> </P>
+        </p>
+      </div>
+
+      <div class="product-image">
+        <img class="img img-fluid p-2" src="./images/hp.avif" alt="" />
+      </div>
+    </div>
+
+    <!-- maharashtra  -->
+    <div class="col-md-5 col-10 col-lg-5 col-xl-5 col-xxl-5 mt-5 mb-5" style="box-shadow: 0 15px 30px 1px grey">
+      <div class="product-details">
+        <h1 style="font-family: Bebas Neue, cursive; font-size: 30px; text-transform: uppercase;">
+          Maharashtra
+        </h1>
+        
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+            <P class="m-0">TOTAL CASES:</P>
+            <p><span class="text-warning fw-bold fs-5"  id="totalcasesma"></span></p>
+          </p>
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+          <p class="m-0">TOTAL DEATHS:</p>
+          <P><span  class="text-danger fw-bold fs-5" id="totaldeathsma"></span> </P>
+          <P><span  class="text-light bg-danger rounded p-1 fw-bold fs-5">HIGHEST</span></P>
+        </p>
+      </div>
+
+      <div class="product-image">
+        <img class="img img-fluid p-2" src="./images/maharashtra.png" alt="" />
+      </div>
+    </div>
+
+
+    <!-- kerla  -->
+
+    <div class="col-md-5 col-10 col-lg-5 col-xl-5 col-xxl-5 mt-5 mb-5" style="box-shadow: 0 15px 30px 1px grey">
+      <div class="product-details">
+        <h1 style="font-family: Bebas Neue, cursive; font-size: 30px; text-transform: uppercase;">
+          Kerala
+        </h1>
+        
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+            <P class="m-0">TOTAL CASES:</P>
+            <p><span  class="text-warning fw-bold fs-5"   id="totalcaseske"></span></p>
+          </p>
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+          <p class="m-0">TOTAL DEATHS:</p>
+          <P><span class="text-danger fw-bold fs-5" id="totaldeathske"></span>  </P>
+        </p>
+      </div>
+
+      <div class="product-image">
+        <img class="img img-fluid p-2" src="./images/kerla.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- karnatka  -->
+    <div class="col-md-5 col-10 col-lg-5 col-xl-5 col-xxl-5 mt-5 mb-5" style="box-shadow: 0 15px 30px 1px grey">
+      <div class="product-details">
+        <h1 style="font-family: Bebas Neue, cursive; font-size: 30px; text-transform: uppercase;">
+          Karnataka
+        </h1>
+        
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+            <P class="m-0 fontsiz">TOTAL CASES:</P>
+            <p> <span  class="text-warning fw-bold fs-5"    id="totalcaseska"></p>
+          </p>
+        <p class="information m-0" style="font-family: EB Garamond, serif">
+          <p class="m-0">TOTAL DEATHS:</p>
+          <P><span class="text-danger fw-bold fs-5" id="totaldeathska"></span> </P>
+        </p>
+      </div>
+
+      <div class="product-image">
+        <img class="img img-fluid p-2" src="./images/Karnataka.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- data information  -->
+    <div class="container mt-5 mb-5 p-4 d-lg-block d-none" style="background-color: rgb(244, 244, 134); ; border-radius: 10px;">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-dark"  style="font-family: 'Playfair Display', palatino">About this data</h3>
+        </div>
+        <div class="col-12 " style="font-family: 'Playfair Display', palatino">
+          <p   >
+            The data used on this page comes from a variety of sources. the API
+            used in this page comes from
+            <a href="https://www.postman.com/">POSTMAN</a> which is a API
+            Platform , Postman is an API platform for building and using APIs.
+            Postman simplifies each step of the API lifecycle and streamlines
+            collaboration so you can create better APIs—faster.
+          </p>
+
+          <p>
+            A link to the
+            <a href="https://www.postman.com/">POSTMAN</a> COVID-19 API
+            <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc">
+              click here</a
+            >
+          </p>
+          <p>
+            Other factors to consider include: different population sizes, the
+            size of a country's elderly population or whether a particular
+            country has a large amount of its people living in densely-populated
+            areas. In addition, countries may be in different stages of the
+            pandemic.
+          </p>
+        </div>
+      </div>
+    </div>
+
+   <!-- ------------------footer  =---------------------- -->
+
+ 
+   <div class="mt-4 pt-3 pb-3 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company" id="footerlinks">
+          <h4>COVID-TRACKER</h4>
+          <p class="pr-5 text-white-50 quote">Get live data for better decisions in an uncertain time</p>
+          <p class="inline"><a href="https://instagram.com/_vishal_033?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></p>
+          <p class="inline"><a href="#"><i class="fa fa-telegram"></i></a></p>
+          <p class="inline"><a href="https://www.facebook.com/profile.php?id=100014347066487"><i class="fa fa-facebook-square mr-1"></i></a></p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links d-lg-block d-none"  id="footerlinks">
+          <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+            <ul class="m-0 p-0">
+              <li>- <a href="indian_page.html">INDIAN covid LIVE</a></li>
+              <li>- <a href="about_covid.html">ABOUT COVID-19</a></li>
+              <li>- <a href="covid_varients.html">VARIANTS</a></li>
+              <li>- <a href="feedback.html">CONTACT US</a></li>
+
+            </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location" id="footerlinks">
+          <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+          <p class="mb-0">HAMIRPUR,HP</p>
+          <p class="mb-0"><i class=" fa fa-spinner fa-spin"></i></p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>(222) 111-0000</p>
+          <p><i class="fa fa-envelope-o mr-3"></i>feedback0033@gmail.com</p>
+        </div>
+      </div>
+      <div class="row mt-2" id="footerlinks">
+        <div class="col copyright">
+          <p class=""><small class="text-white-50 ">© 2019. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+      // main indian records -----------------
+    
+    </script>
+    <script src="js/global.js"></script>
+    <script src="js/indian_page.js"></script>
+  </body>
+</html>
